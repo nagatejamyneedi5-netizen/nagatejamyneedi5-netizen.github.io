@@ -171,6 +171,8 @@
       transition: opacity 0.2s ease, transform 0.1s ease;
       box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
     }
 
     .btn-secondary {
@@ -235,7 +237,7 @@
     <div class="project-card">
       <div class="project-header">
         <span class="project-title">DoodleNotes</span>
-        <a href="https://apps.microsoft.com/detail/9N8V8V126Z1Q" target="_blank" class="project-link">View on Microsoft Store &rarr;</a>
+        <a href="https://apps.microsoft.com/detail/9N3H2XQJ0S3F?hl=en-us&gl=IN&ocid=pdpshare" target="_blank" class="project-link">View on Microsoft Store &rarr;</a>
       </div>
       <p class="project-desc">
         A desktop application published on the Microsoft Store designed for quick note-taking, sketching, and personal productivity.
@@ -243,9 +245,9 @@
     </div>
 
     <div class="actions">
-      <button class="btn-primary" onclick="copyEmail()">Contact Me</button>
+      <a href="mailto:nagatejamyneedi5@gmail.com" class="btn-primary" onclick="copyEmail()">Contact Me</a>
       <a href="https://github.com/nagatejamyneedi5-netizen" target="_blank" class="btn-secondary">GitHub Profile</a>
-      <div id="toast" class="copied-toast">Email copied to clipboard!</div>
+      <div id="toast" class="copied-toast">Email app opened & address copied!</div>
     </div>
   </div>
 
@@ -256,7 +258,7 @@
       toast.classList.add('show');
       setTimeout(() => {
         toast.classList.remove('show');
-      }, 2500);
+      }, 3000);
     }
   </script>
 
